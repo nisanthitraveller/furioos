@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1cafa257.css",
+    "main.js": "/static/js/main.9aab51cb.js",
+    "static/js/501.ec55707e.chunk.js": "/static/js/501.ec55707e.chunk.js",
+    "static/js/819.6704888d.chunk.js": "/static/js/819.6704888d.chunk.js",
+    "static/js/562.ffcd531a.chunk.js": "/static/js/562.ffcd531a.chunk.js",
+    "static/js/693.44d08286.chunk.js": "/static/js/693.44d08286.chunk.js",
+    "static/media/natamai_a_hyperreal_lotus_jewelery_with_diamonds_and_pearl_3d_c_461f284f-ff5f-4449-bb4c-815367914787.png": "/static/media/natamai_a_hyperreal_lotus_jewelery_with_diamonds_and_pearl_3d_c_461f284f-ff5f-4449-bb4c-815367914787.16caff401074739735fc.png",
+    "index.html": "/index.html",
+    "main.1cafa257.css.map": "/static/css/main.1cafa257.css.map",
+    "main.9aab51cb.js.map": "/static/js/main.9aab51cb.js.map",
+    "501.ec55707e.chunk.js.map": "/static/js/501.ec55707e.chunk.js.map",
+    "819.6704888d.chunk.js.map": "/static/js/819.6704888d.chunk.js.map",
+    "562.ffcd531a.chunk.js.map": "/static/js/562.ffcd531a.chunk.js.map",
+    "693.44d08286.chunk.js.map": "/static/js/693.44d08286.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1cafa257.css",
+    "static/js/main.9aab51cb.js"
+  ]
+}

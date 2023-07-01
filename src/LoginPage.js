@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const LoginForm = () => {
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+    useEffect(() => {
+        if (localStorage.getItem('furioos-login') !== null) {
+            navigate('/start')
+        }
+    }, []);
 
     const handleLogin = async (e) => {
         e.preventDefault();
@@ -25,6 +33,7 @@ const LoginForm = () => {
             return response.data;
         }*/
         localStorage.setItem('furioos-login', JSON.stringify({ loggedIn: true }))
+        toast.success('Logged In Successfully!');
         navigate('/start');
     };
 

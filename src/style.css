@@ -138,7 +138,8 @@ button:hover {
 }
 
 iframe {
-    border: none!important
+    border: none!important;
+    height: 100vh important;
 }
 
 .txt1 {
@@ -357,7 +358,24 @@ iframe {
     -ms-box-shadow: 0 10px 30px 0 rgba(189,89,212,.8)
 }
 
-
+small{
+ 
+        position: absolute;
+        bottom: 15px;
+        width: 100%;
+        max-width: 518px;
+        margin: 0 auto;
+        text-align: center;
+        right: 0;
+        left: 0;
+        z-index: 9;
+        padding: 9px 8px;
+        background: #ffda6c;
+        border-radius: 10px;
+        color: #000;
+        font-size: 15px;
+   
+}
 
 @-webkit-keyframes anim-shadow {
     to {
@@ -540,8 +558,15 @@ h2{
     .login100-form {
         width: 100%
     }
+   small{
+    width:94%;
+   }
 }
-
+@media (orientation: landscape) {
+    small{
+       display:none;
+       }
+  }
 @media(max-width: 576px) {
     .wrap-login100 {
         padding: 50px 15px 33px;

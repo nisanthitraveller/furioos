@@ -6,8 +6,6 @@ const Home = () => {
             <div className="row">
                 <div className="col-md-12">
                     <img src={LotusImage} alt='Lotus' />
-                    <a href='/login' className="btn btn-primary">Login</a>
-                    <a href='/register' className="btn btn-primary">Register</a>
                 </div>
             </div>
         </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from "react-router-dom";
+import regImg from '../src/assets/images/regbg.png';
 
 const RegisterForm = () => {
     const navigate = useNavigate();
@@ -21,56 +22,64 @@ const RegisterForm = () => {
     return (
         <form onSubmit={handleRegister}>
             <h2>Register</h2>
-            <div className="form-group">
-                <label htmlFor="name">Name:</label>
+            <div className="wrap-input100">
+                {/* <label htmlFor="name">Name:</label> */}
                 <input
                     type="text"
                     id="name"
-                    className="form-control"
+                    className="input100"
                     placeholder="Enter name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     required
                 />
             </div>
-            <div className="form-group">
-                <label htmlFor="email">Email:</label>
+            <div className="wrap-input100">
+                {/* <label htmlFor="email">Email:</label> */}
                 <input
                     type="email"
                     id="email"
-                    className="form-control"
+                    className="input100"
                     placeholder="Enter email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
                 />
             </div>
-            <div className="form-group">
-                <label htmlFor="password">Password:</label>
+            <div className="wrap-input100">
+                {/* <label htmlFor="password">Password:</label> */}
                 <input
                     type="password"
                     id="password"
-                    className="form-control"
+                    className="input100"
                     placeholder="Enter password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     required
                 />
             </div>
-            <button type="submit" className="btn btn-primary">Register</button>
+            <div className='container-login100-form-btn'>
+            <button type="submit" className="login100-form-btn">Register</button>
+            </div>
         </form>
     );
 };
 
 const RegisterPage = () => {
     return (
-        <div className="container">
-            <div className="row">
-                <div className="col-md-12">
+        <section className='limiter'>
+       <div className="container-login100">
+            <div className='wrap-login100'>
+            <div className='login100-pic'>
+                    <img src={regImg} />
+                </div>
+                <div className="login100-form">
                     <RegisterForm />
                 </div>
+           
             </div>
         </div>
+        </section>
     );
 };
 

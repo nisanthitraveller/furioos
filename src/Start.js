@@ -18,21 +18,23 @@ const Start = () => {
     return (
         <div className="main-container">
             <div id="furioos_container"></div>
-            <button className="btn btn-primary m-2" id="button_start">Start session</button>
-            <button className="btn btn-primary m-2" id="button_stop">Stop session</button>
-            <button className="btn btn-primary m-2" id="button_restartStream">Restart stream</button>
-            <button className="btn btn-primary m-2" id="button_sendSDKMessage">Send SDK message</button>
-            <button className="btn btn-primary m-2" id="button_maximize">Maximize</button>
-            <button className="btn btn-primary m-2" id="button_minimize">Minimize</button>
-            <button className="btn btn-primary m-2" id="button_setUserActive">Set user active</button>
-            <button className="btn btn-primary m-2" id="button_getServerAvailability">Get server availability</button>
-            <button className="btn btn-primary m-2" id="button_getServerMetadata">Get server metadata</button>
-            <button className="btn btn-primary m-2" id="button_setThumb">Set Thumbnail</button>
-            <button className="btn btn-primary m-2" id="button_quality_auto">Quality Auto</button>
-            <button className="btn btn-primary m-2" id="button_quality_low">Quality Low</button>
-            <button className="btn btn-primary m-2" id="button_quality_medium">Quality Medium</button>
-            <button className="btn btn-primary m-2" id="button_quality_high">Quality High</button>
-            <div className="slidecontainer">
+            <div className='row align-items-center justify-content-center'>
+            <button className=" m-btn m-2" id="button_start">Start session</button>
+            <button className=" m-btn m-2" id="button_stop">Stop session</button>
+            <button className=" m-btn m-2" id="button_restartStream">Restart stream</button>
+            <button className=" m-btn m-2" id="button_sendSDKMessage">Send SDK message</button>
+            <button className=" m-btn m-2" id="button_maximize">Maximize</button>
+            <button className=" m-btn m-2" id="button_minimize">Minimize</button>
+            <button className=" m-btn m-2" id="button_setUserActive">Set user active</button>
+            <button className=" m-btn m-2" id="button_getServerAvailability">Get server availability</button>
+            <button className=" m-btn m-2" id="button_getServerMetadata">Get server metadata</button>
+            <button className=" m-btn m-2" id="button_setThumb">Set Thumbnail</button>
+            <button className=" m-btn m-2" id="button_quality_auto">Quality Auto</button>
+            <button className=" m-btn m-2" id="button_quality_low">Quality Low</button>
+            <button className=" m-btn m-2" id="button_quality_medium">Quality Medium</button>
+            <button className=" m-btn m-2" id="button_quality_high">Quality High</button>
+            </div>
+            <div className="slidecontainer align-items-center justify-content-center">
                 <input type="range" min="0" max="100" defaultValue={100} className="slider" id="volume_range" />
             </div>
 

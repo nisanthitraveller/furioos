@@ -560,6 +560,7 @@ h2{
     }
    small{
     width:94%;
+    font-size: 14px;
    }
 }
 @media (orientation: landscape) {

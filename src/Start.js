@@ -22,7 +22,8 @@ const Start = () => {
     return (
         <div className="main-container">
             <div id="furioos_container"></div>
-            <div className='row align-items-center justify-content-center'>
+            <small>Please rotate the phone since this virtual shopping experience is best viewed in a landscape mode.</small>
+            <div className='row align-items-center justify-content-center d-none'>
             <button className=" m-btn m-2" id="button_start">Start session</button>
             <button className=" m-btn m-2" id="button_stop">Stop session</button>
             <button className=" m-btn m-2" id="button_restartStream">Restart stream</button>
@@ -38,7 +39,7 @@ const Start = () => {
             <button className=" m-btn m-2" id="button_quality_medium">Quality Medium</button>
             <button className=" m-btn m-2" id="button_quality_high">Quality High</button>
             </div>
-            <div className="slidecontainer align-items-center justify-content-center">
+            <div className="slidecontainer align-items-center justify-content-center d-none">
                 <input type="range" min="0" max="100" defaultValue={100} className="slider" id="volume_range" />
             </div>
 

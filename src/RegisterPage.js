@@ -15,6 +15,17 @@ const RegisterForm = () => {
         console.log('Name:', name);
         console.log('Email:', email);
         console.log('Password:', password);
+        /*const response = await axios({
+            method: "post",
+            url: API_URLS.REGISTER,
+            data: {name: name, email: email, password: password},
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+        if (response.data) {
+            return response.data;
+        }*/
         localStorage.setItem('furioos-login', JSON.stringify({ loggedIn: true }))
         navigate('/start');
     };

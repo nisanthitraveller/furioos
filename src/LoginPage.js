@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from "react-router-dom";
 import sideImg from '../src/assets/images/loginbg.png';
-
+import LotusImage from "./assets/images/natamai_a_hyperreal_lotus_jewelery_with_diamonds_and_pearl_3d_c_461f284f-ff5f-4449-bb4c-815367914787.png";
 
 const LoginForm = () => {
     const navigate = useNavigate();
@@ -65,12 +65,10 @@ const LoginForm = () => {
 
 const LoginPage = () => {
     return (
-        <section className='limiter'>
-            <div className="container-login100">
+        <section className='limiter' >
+            <div className="container-login100" style={{ backgroundImage: `url(${LotusImage})` }}>
                 <div className='wrap-login100'>
-                    <div className='login100-pic'>
-                        <img src={sideImg} />
-                    </div>
+                   
                     <div className="login100-form">
 
                         <LoginForm />

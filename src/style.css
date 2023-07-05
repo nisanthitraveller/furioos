@@ -29,7 +29,7 @@ a:focus {
 
 a:hover {
     text-decoration: none;
-    color: #57b846
+    color: #606C5D;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -178,25 +178,31 @@ iframe {
     background: -webkit-linear-gradient(-135deg,#c850c0,#4158d0);
     background: -o-linear-gradient(-135deg,#c850c0,#4158d0);
     background: -moz-linear-gradient(-135deg,#c850c0,#4158d0);
-    background: linear-gradient(-135deg,#c850c0,#4158d0)
+    background: linear-gradient(-135deg,#c850c0,#4158d0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .wrap-login100 {
-    max-width: 960px;
-    width:100%;
+    max-width: 480px;
+    width: 100%;
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 80px 90px;
-    min-height:510px;
-    align-items:center;
+    padding: 60px 60px;
+    min-height: 450px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: linear-gradient(180deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,.2));
+    box-shadow: 0 1px 24px -1px rgba(0,0,0,.2);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: rgb(255 244 244 / 79%);
 }
 
 .login100-pic {
@@ -237,7 +243,7 @@ iframe {
     color: #666;
     display: block;
     width: 100%;
-    background: #e6e6e6;
+    background: #fff;
     height: 50px;
     border-radius: 25px;
     padding: 0 15px 0 20px
@@ -256,12 +262,18 @@ iframe {
     color: rgba(87,184,70,.8)
 }
 .loginhome-more {
-    width: calc(100% - 490px);
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    position: relative;
+    background-position: center center;
+    position: absolute;
     z-index: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:0;
+    left:0;
 }
 .container-loginhome {
     width: 100%;
@@ -280,30 +292,46 @@ iframe {
     width: 100%;
     background: #fff;
     overflow: hidden;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
     flex-direction: row-reverse;
+    position: relative;
+    height: 100vh;
 }
 .input100:focus+.focus-input100 {
     -webkit-animation: anim-shadow .5s ease-in-out forwards;
     animation: anim-shadow .5s ease-in-out forwards
 }
-.form-index{
-    max-width: 490px;
+.form-index {
+    max-width: 720px;
     width: 100%;
-    min-height: 100vh;
+    text-align: center;
     display: block;
-    background-color: #f7f7f7;
-    padding: 15px 20px;
+    background-color: #FFF4F4;
+    padding: 45px 40px;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 20px;
+    background: linear-gradient(180deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,.2));
+    box-shadow: 0 1px 24px -1px rgba(0,0,0,.2);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: rgb(255 244 244 / 79%);
+}
+
+.form-index h1{
+    color: #606C5D;
+    margin-bottom:10px;
+    display:block;
+}
+
+.form-index p{
+    color:#000;
+    font-size:16px;
+    text-shadow: 0 0 13px #ffffff;
 }
 
 .container-loginhome-form-btn {
@@ -314,7 +342,8 @@ iframe {
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center
+    justify-content: center;
+    margin-top:25px;
 }
 .loginhome-form-btn{
     text-decoration:none;
@@ -330,34 +359,30 @@ iframe {
     padding: 0 20px;
     min-width: 160px;
     height: 50px;
-    background-color: #bd59d4;
+    background-color: #F1C376;
     border-radius: 25px;
     font-family: 'Montserrat', sans-serif;
     font-weight:700;
     font-size: 14px;
-    color: #fff;
+    color: #606C5D;
     line-height: 1.2;
     text-transform: uppercase;
     -webkit-transition: all .4s;
     -o-transition: all .4s;
     -moz-transition: all .4s;
     transition: all .4s;
-    box-shadow: 0 10px 30px 0 rgba(189,89,212,.5);
-    -moz-box-shadow: 0 10px 30px 0 rgba(189,89,212,.5);
-    -webkit-box-shadow: 0 10px 30px 0 rgba(189,89,212,.5);
-    -o-box-shadow: 0 10px 30px 0 rgba(189,89,212,.5);
-    -ms-box-shadow: 0 10px 30px 0 rgba(189,89,212,.5)
+    box-shadow: 0 10px 30px 0 rgb(241 195 118 / 59%);
+    border: 3px solid #fff;
 }
 
 .loginhome-form-btn:hover {
-    background-color: #4b2354;
-    box-shadow: 0 10px 30px 0 rgba(189,89,212,.8);
-    -moz-box-shadow: 0 10px 30px 0 rgba(189,89,212,.8);
-    -webkit-box-shadow: 0 10px 30px 0 rgba(189,89,212,.8);
-    -o-box-shadow: 0 10px 30px 0 rgba(189,89,212,.8);
-    -ms-box-shadow: 0 10px 30px 0 rgba(189,89,212,.8)
+    background-color: #dcac5a;
+    box-shadow: 0 10px 30px 0 rgb(241 195 118 / 79%);
+    color:#000;
 }
-
+.container-loginhome-form-btn a{
+    margin:0 10px;
+}
 small{
  
         position: absolute;
@@ -436,12 +461,12 @@ small{
     font-weight:700;
     font-size: 15px;
     line-height: 1.5;
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
     width: 100%;
     height: 50px;
     border-radius: 25px;
-    background: #57b846;
+    background: #F1C376;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -453,13 +478,15 @@ small{
     -webkit-transition: all .4s;
     -o-transition: all .4s;
     -moz-transition: all .4s;
-    transition: all .4s
+    transition: all .4s;
+    border:3px solid #fff;
+
 }
 
 h2{
     font-weight:700;
     font-size: 24px;
-    color: #333;
+    color: #606C5D;
     line-height: 1.2;
     text-align: center;
     width: 100%;
@@ -468,7 +495,7 @@ h2{
 }
 
 .login100-form-btn:hover {
-    background: #333
+    background: #d29d45
 }
 #furioos_container {
    
@@ -560,6 +587,7 @@ h2{
     }
    small{
     width:94%;
+    font-size: 14px;
    }
 }
 @media (orientation: landscape) {
@@ -576,8 +604,14 @@ h2{
     .wrap-loginhome{
         flex-direction: column-reverse;
     }
-    .form-index{
+    .form-index {
         min-height: 50vh;
+        width: 94%;
+        padding: 37px 26px;
+       
+    }
+    .loginhome-form-btn{
+        min-width: 117px;  
     }
     .loginhome-more{
         min-height: 50vh;
